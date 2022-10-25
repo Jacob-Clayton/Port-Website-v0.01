@@ -177,11 +177,11 @@ input, select, textarea {
 		transition: border-bottom-color 0.25s ease-in-out;
 		text-decoration: none;
 		color: #000000;
-		border-bottom: dotted 1px;
+	
 	}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 			border-bottom-color: transparent;
 		}
 
