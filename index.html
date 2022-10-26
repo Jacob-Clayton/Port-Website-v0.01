@@ -19,11 +19,22 @@
 							<h1>Jacob Clayton</h1>
 							<p>data analyst portfolio</p>
 							<ul class="actions">
-								<li><a href="#skills" class="arrow scrolly"><span class="label">Next</span></a></li>
+								<li><a href="#me" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
 						</header>
 						<div class="content">
 							<span class="image fill" data-position="center"><img src="images/dev.jpg" alt="" /></span>
+						</div>
+					</section>
+
+					<!-- Section -->
+					<section id="me">
+						<header>
+							<h2>About me</h2>
+						</header>
+						<div class="content">
+							<p><strong>Hi, my name is Jacob and I work remotely as a web3 project manager.</strong>
+								<br> I hold a Bachelor’s degree in Environmental Science from Manchester Metropolitan University, with a focus on data analytics and visualisation. Before turning to web3 project management I worked for more than five years as a retail manager. Now I have my sight set on data analytics.</p>
 						</div>
 					</section>
 					
@@ -55,12 +66,17 @@
 						<div class="content">
 							<p><strong>Data analysis with Python using Pandas, Numpy & Madplotlib</strong>
 								<br>link to code and analysis</p>
-							<h3>Project - X in Python</h3>
+							<ul class="actions">
+								<li><a href="#" class="button large">Python Certificate University of Michigan</a></li>
+							</ul>
+							<h3>Project X in Python</h3>
 							<ul class="actions">
 								<li><a href="#" class="button primary large">X project</a></li>
-								<li><a href="#" class="button large">Y Project</a></li>
 							</ul>
-							<span class="image main"><img src="images/python_devcut.jpg" alt="" /></span>
+							<h3>Project Y in Python</h3>
+							<ul class="actions">
+								<li><a href="#" class="button primary large">Y Project</a></li>
+							</ul>
 						</div>
 					</section>
 
@@ -71,37 +87,18 @@
 					</header>
 					<div class="content">
 						<p><strong>Database management with SQL</strong>
-							<br>Big Querey, SQLite and ...link to scripts</p>
+							<br>Big Querey, SQLite and
+						 </p>
+						 <ul class="actions">
+							<li><a href="https://www.coursera.org/account/accomplishments/verify/JBU4LT9T7CSW" class="button large">SQL Certificate University of California</a></li>
+						</ul>
 						<h3>Project - Data cleaning in SQL</h3>
 						<pre>
-							<code>
-							SELECT
-								Warehouse.warehouse_id,<br>
-								CONCAT(warehouse.state,' ', warehouse.warehouse_alias) AS warehouse_name,<br>
-								COUNT(Orders.order_id) AS number_of_orders,<br>
-								(SELECT<br>
-								  COUNT(*)<br>
-								  FROM warehouse_orders.orders Orders)<br>
-								AS total_orders,<br>
-								CASE<br>
-								  WHEN COUNT(Orders.order_id)/(SELECT COUNT(*) FROM warehouse_orders.orders Orders) <= 0.20<br>
-								  THEN "Fulfilled 0-20% of Orders"<br>
-								  WHEN COUNT(Orders.order_id)/(SELECT COUNT(*) FROM warehouse_orders.orders Orders) > 0.20<br>
-								  AND COUNT(Orders.order_id)/(SELECT COUNT(*) FROM warehouse_orders.orders Orders) <= 0.60<br>
-								  THEN "Fulfilled 21-60% of Orders"<br>
-								ELSE "Fulfilled more than 60% of Orders"<br>
-								END AS fulfillment_summary<br>
-							FROM warehouse_orders.warehouse Warehouse<br>
-								LEFT JOIN warehouse_orders.orders Orders<br> 
-								ON Orders.warehouse_id = Warehouse.warehouse_id<br>
-								GROUP BY<br> 
-								  Warehouse.warehouse_id,<br>
-								  warehouse_name<br>
-								HAVING<br>
-								  COUNT(Orders.order_id) >0</code><br>
+							<code>SELECT<br>FROM<br>WHEN</code>
 						</pre>
 						<ul class="actions">
-							<li><a href="#" class="button primary large">View SQL Project</a></li>
+							<li><a href="https://github.com/Jacob-Clayton/SQL/blob/main/Bigquery_warehouse.sql" class="button primary large">SQL Script 1</a></li>
+							<li><a href="https://github.com/Jacob-Clayton/SQL/blob/main/bigquery_temp.sql" class="button primary large">SQL Script 2</a></li>
 						</ul>
 					</div>
 				</section>					
@@ -114,15 +111,30 @@
 						<div class="content">
 							<p><strong>Using Tableau to visualize data</strong>
 								<br>write text here</p>
-							<ul class="actions">
-								<li><a href="#" class="button primary large">View Tableau Dashboard</a></li>
-							</ul>
+								<ul class="actions">
+									<li><a href="https://www.coursera.org/account/accomplishments/verify/BSC823S6CKNB" class="button large">University of California Tableau Certificate</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="https://www.coursera.org/account/accomplishments/verify/DNGS3JRAENGB" class="button large">Google Tableau Certificate</a></li>
+								</ul>
+								<h3>Project - London Bus Safety</h3>
+								<p>An interactive dashboard visualizing traffic incident data by borough, incident type, bus route, season and frequency.</p>
+								<ul class="actions">
+									<li><a href="https://public.tableau.com/views/ex_01_bussafety/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" class="button primary large">London Bus Safety</a></li>
+								</ul>	
+								<h3>Project - Global C02 Emissions</h3>	
+								<ul class="actions">
+									<li><a href="#" class="button primary large">Global C02 Emissions</a></li>
+								</ul>						
 
 							<!-- Section -->
 								<section>
 									<div class="content">
 										<h3>Traffic Analysis</h3>
 										<p>A live dashboard</p>
+										<ul class="actions">
+											<li><a href="#" class="button primary large">View Tableau Dashboard</a></li>
+										</ul>
 										<div class="gallery">
 											<a href="images/gallery/fulls/01.jpg" class="landscape"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
 											<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
@@ -141,9 +153,12 @@
 						<div class="content">
 							<p><strong>MS Excel and Google Sheets</strong>
 								<br>formulas, conditional formatting and pivot tables</p>
+								<ul class="actions">
+									<li><a href="https://www.coursera.org/account/accomplishments/professional-cert/RN7GNF7XXK4Q" class="button large">Google Data Analytics Certificate</a></li>
+								</ul>
+								<h3>Spreadsheet Project</h3>
 							<ul class="actions">
-								<li><a href="#" class="button primary large">Get Started</a></li>
-								<li><a href="#" class="button large">Learn More</a></li>
+								<li><a href="#" class="button primary large">View Project</a></li>
 							</ul>
 						</div>
 					</section>
@@ -156,10 +171,13 @@
 					<div class="content">
 						<p><strong>HTML, CSS & Javascript</strong>
 							<br>I made this website with HTML, CSS and Javascript</p>
+							<ul class="actions">
+								<li><a href="#" class="button large">Web Dev Certificate</a></li>
+							</ul>
 							<span class="image main"><img src="images/portfolio_ss.png" alt="" /></span>
 							<ul class="actions">
 								<li><a href="https://github.com/Jacob-Clayton/Portfolio/blob/master/index.html" class="button primary large"> View Website HTML</a></li>
-								<li><a href="https://github.com/Jacob-Clayton/Portfolio/blob/master/assets/css/main.css" class="button large">View Website CSS</a></li>
+								<li><a href="https://github.com/Jacob-Clayton/Portfolio/blob/master/assets/css/main.css" class="button primary large">View Website CSS</a></li>
 							</ul>
 					</div>
 				</section>	
@@ -172,10 +190,9 @@
 					<div class="content">
 						<p><strong>Data Analysis with R</strong>
 							<br>Experience using the tidyverse package ggplot2 for data analysis.
-							<br>Experience creating R Markdown documents to save and share code in a comprehensible form for stakeholders.
-							<br>Completed Google Data Analysis certificate which includes a 37hr course on R.</p>
+							<br>Experience creating R Markdown documents to save and share code in a comprehensible form for stakeholders.</p>
 							<ul class="actions">
-								<li><a href="https://www.coursera.org/account/accomplishments/verify/VRUZF7T3B94H" class="button primary large">R Programming Certificate</a></li>
+								<li><a href="https://www.coursera.org/account/accomplishments/verify/VRUZF7T3B94H" class="button large">Google R Programming Certificate</a></li>
 							</ul>
 					</div>
 				</section>	
